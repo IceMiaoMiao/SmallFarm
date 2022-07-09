@@ -1,0 +1,89 @@
+;;HuiRanBlueBorderedBig.inf
+;; ************ WARNING **************
+;; Prohibition of infringement of copyright and intellectual property!
+;; Copyright author belongs to Coolapk@安然菌JK
+;; Mouse icon author belongs to Coolapk@小怪嘼
+;; If you see the content in this line, it means that you have unpacked it, 
+;; and the copyright information must be marked for application!
+;;
+;; Please rest assured that all problems occurred will be borne by us.
+
+; -- Version Section
+
+[Version]
+signature="$CHICAGO$"
+
+; -- DefaultInstall/DwfaultInstall32 Section
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg,Wreg
+
+; -- DestinationDirs Section
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+
+[Wreg]
+HKCU,"Control Panel\Cursors",,0x00020000,"%SCHEME_NAME%"
+HKCU,"Control Panel\Cursors",AppStarting,0x00020000,"%10%\%CUR_DIR%\%work%"
+HKCU,"Control Panel\Cursors",Arrow,0x00020000,"%10%\%CUR_DIR%\%pointer%"
+HKCU,"Control Panel\Cursors",Crosshair,0x00020000,"%10%\%CUR_DIR%\%Cross%"
+HKCU,"Control Panel\Cursors",Hand,0x00020000,"%10%\%CUR_DIR%\%link%"
+HKCU,"Control Panel\Cursors",Help,0x00020000,"%10%\%CUR_DIR%\%Help%"
+HKCU,"Control Panel\Cursors",IBeam,0x00020000,"%10%\%CUR_DIR%\%Text%"
+HKCU,"Control Panel\Cursors",NWPen,0x00020000,"%10%\%CUR_DIR%\%Hand%"
+HKCU,"Control Panel\Cursors",SizeAll,0x00020000,"%10%\%CUR_DIR%\%move%"
+HKCU,"Control Panel\Cursors",SizeNESW,0x00020000,"%10%\%CUR_DIR%\%Dgn2%"
+HKCU,"Control Panel\Cursors",SizeNS,0x00020000,"%10%\%CUR_DIR%\%Vert%"
+HKCU,"Control Panel\Cursors",SizeNWSE,0x00020000,"%10%\%CUR_DIR%\%Dgn1%"
+HKCU,"Control Panel\Cursors",SizeWE,0x00020000,"%10%\%CUR_DIR%\%Horz%"
+HKCU,"Control Panel\Cursors",UpArrow,0x00020000,"%10%\%CUR_DIR%\%alternate%"
+HKCU,"Control Panel\Cursors",Wait,0x00020000,"%10%\%CUR_DIR%\%busy%"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Runonce\Setup\","",,"rundll32.exe shell32.dll,Control_RunDLL main.cpl @0,1"
+
+
+[Scheme.Cur]
+"AppStarting.ani"
+"Candidate.cur"
+"Diagonal1.cur"
+"Diagonal2.cur"
+"HandWriting.cur"
+"Help.cur"
+"Horizontal.cur"
+"Link.cur"
+"Loading.ani"
+"Move.cur"
+"No.cur"
+"Normal.cur"
+"PreciseSelectionBordered.cur"
+"TextSelectionBordered.cur"
+"Vertical.cur"
+;; Copyright author belongs to Coolapk@安然菌JK
+[Strings]
+CUR_DIR					= "Cursors\HuiRanBlueBorderedBig"
+SCHEME_NAME				= "HuiRan鼠标指针蓝色（大-有框）"
+SCHEME_DESCRIPTION		= "HuiRan鼠标指针蓝色 酷安@小怪嘼"
+pointer					= "Normal.cur"
+help					= "Help.cur"
+work					= "AppStarting.ani"
+busy					= "Loading.ani"
+cross					= "PreciseSelectionBordered.cur"
+text					= "TextSelectionBordered.cur"
+hand					= "HandWriting.cur"
+unavailiable			= "No.cur"
+vert					= "Vertical.cur"
+horz					= "Horizontal.cur"
+dgn1					= "Diagonal1.cur"
+dgn2					= "Diagonal2.cur"
+move					= "Move.cur"
+alternate				= "Candidate.cur"
+link					= "Link.cur"
+;; Copyright author belongs to Coolapk@安然菌JK
